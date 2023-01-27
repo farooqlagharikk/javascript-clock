@@ -1,133 +1,131 @@
-*
+* {
 
-{
+	margin: 0;
 
-	margin:0;
+	padding: 0;
 
-	padding:0;
+	box-sizing: border-box;
 
-	box-sizing:border-box;
-
-	font-family:'poppins'm sabs-serif;
+	font-family: 'poppins' m sabs-serif;
 
 }
 
-body{
+body {
 
-	display:flex;
+	display: flex;
 
-	justify-content:center;
+	justify-content: center;
 
-	align-items:center;
+	align-items: center;
 
-	min-height:100vh;
+	min-height: 100vh;
 
-	background-image:url("./images/img.jpg");
-    padding:80px 0px;
+	background-image: url("./images/img.jpg");
+	padding: 80px 0px;
 
-	background-size:cover;
+	background-size: cover;
 
 }
 
-.cotainer{
+.cotainer {
 
-	position:relative;
+	position: relative;
 
-	background:#2f363e;
+	background: #2f363e;
 
 	/*min-height:500px;*/
 
-	border-radius:20px;
+	border-radius: 20px;
 
-	border-top-left-radius:225px;
+	border-top-left-radius: 225px;
 
-	border-top-right-radius:225px;
+	border-top-right-radius: 225px;
 
-	box-shadow: 25px 25px 75px rgba(0,0,0,0.75),
+	box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75),
 
-	10px 10px 70px rgba(0,0,0,0.25),
+		10px 10px 70px rgba(0, 0, 0, 0.25),
 
-	inset 5px 5px 10px rgba(0,0,0,0.5),
+		inset 5px 5px 10px rgba(0, 0, 0, 0.5),
 
-	inset 5px 5px 20px rgba(255,255,255,0.2),
+		inset 5px 5px 20px rgba(255, 255, 255, 0.2),
 
-	inset -5px -5px 15px rgba(0,0,0,0.75);
+		inset -5px -5px 15px rgba(0, 0, 0, 0.75);
 
-	display:flex;
+	display: flex;
 
-	justify-content:center;
+	justify-content: center;
 
-	align-items:center;
+	align-items: center;
 
 
 
-	flex-direction:column;
+	flex-direction: column;
 
-	
 
-}
-
-.clock{
-
-	position:relative;
-
-	width:450px;
-
-	height:450px;
-
-	background:#2f363e;
-
-	border-radius:50%;
-
-	box-shadow:10px 50px 70px rgba(0,0,0,0.25),
-
-	inset 5px 5px 10px rgba(0,0,0,0.5),
-
-	inset 5px 5px 20px rgba(0,0,0,0.2),
-
-	inset -5px -5px 15px rgba(0,0,0,0.75);
-
-	display:flex;
-
-	justify-content:center;
-
-	align-items:center;
-
-	margin-bottom:30px;
 
 }
 
-.clock::before{
+.clock {
 
-	content:'';
+	position: relative;
 
-	position:absolute;
+	width: 450px;
 
-	width:8px;
+	height: 450px;
 
-	height:8px;
+	background: #2f363e;
 
-	background:#2f363e;
+	border-radius: 50%;
 
-	border:3px solid #fff;
+	box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
 
-	border-radius:50%;
+		inset 5px 5px 10px rgba(0, 0, 0, 0.5),
 
-	z-index:100000;
+		inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+
+		inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	margin-bottom: 30px;
 
 }
 
-.clock span{
+.clock::before {
 
-	position:absolute;
+	content: '';
 
-	inset:20px;
+	position: absolute;
 
-	color:#00ffff;
+	width: 8px;
 
-	text-align:center;
+	height: 8px;
 
-	transform:rotate(calc(30deg * var(--i)));
+	background: #2f363e;
+
+	border: 3px solid #fff;
+
+	border-radius: 50%;
+
+	z-index: 100000;
+
+}
+
+.clock span {
+
+	position: absolute;
+
+	inset: 20px;
+
+	color: #00ffff;
+
+	text-align: center;
+
+	transform: rotate(calc(30deg * var(--i)));
 
 	/*360/12=30deg*/
 
@@ -135,201 +133,199 @@ body{
 
 }
 
-.clock span b{
+.clock span b {
 
-	font-size:2em;
+	font-size: 2em;
 
-	opacity:0.75;
+	opacity: 0.75;
 
-	font-weight:600;
+	font-weight: 600;
 
-	display:inline-block;
+	display: inline-block;
 
-	transform:rotate(calc(-30deg * var(--i)));
+	transform: rotate(calc(-30deg * var(--i)));
 
 }
 
-.circle{
+.circle {
 
-	position:absolute;
+	position: absolute;
 
-	width:300px;
+	width: 300px;
 
-	height:300px;
+	height: 300px;
 
 	/*border:2px solid rgba(0,0,0,0.25);*/
 
-	border-radius:50%;
+	border-radius: 50%;
 
-	display:flex;
+	display: flex;
 
-	justify-content:center;
+	justify-content: center;
 
-	align-items:flex-start;
+	align-items: flex-start;
 
-	z-index:10;
-
-}
-
-.circle2{
-
-	width:240px;
-
-	height:240px;
-
-	z-index:9;
+	z-index: 10;
 
 }
 
-.circle3{
+.circle2 {
 
-	width:180px;
+	width: 240px;
 
-	height:180px;
+	height: 240px;
 
-	z-index:8;
-
-}
-
-.circle i{
-
-	position:absolute;
-
-	width:6px;
-
-	height:50%;
-
-	background:var(--clr);
-
-	opacity:0.75;
-
-	transform-origin:bottom;
-
-	transform:scaleY(0.5);
+	z-index: 9;
 
 }
 
-.circle:nth-child(1)i{
+.circle3 {
 
-	width:2px;
+	width: 180px;
 
-}
+	height: 180px;
 
-.circle:nth-child(2)i{
-
-	width:6px;
+	z-index: 8;
 
 }
 
-.circle::before{
+.circle i {
 
-	content:'';
+	position: absolute;
 
-	position:absolute;
+	width: 6px;
 
-	width:15px;
+	height: 50%;
 
-	height:15px;
+	background: var(--clr);
 
-	background:var(--clr);
+	opacity: 0.75;
 
-	top:-8.5px;
+	transform-origin: bottom;
 
-	border-radius:50%;
+	transform: scaleY(0.5);
 
-	box-shadow:0 0 20px var(--clr),
+}
 
-	0 0 60px var(--clr);
+.circle:nth-child(1)i {
+
+	width: 2px;
+
+}
+
+.circle:nth-child(2)i {
+
+	width: 6px;
+
+}
+
+.circle::before {
+
+	content: '';
+
+	position: absolute;
+
+	width: 15px;
+
+	height: 15px;
+
+	background: var(--clr);
+
+	top: -8.5px;
+
+	border-radius: 50%;
+
+	box-shadow: 0 0 20px var(--clr),
+
+		0 0 60px var(--clr);
 
 }
 
 /*digital clock style*/
 
-#time{
+#time {
 
-	margin-bottom:40px;
+	margin-bottom: 40px;
 
-	display:flex;
+	display: flex;
 
-	padding:10px 20px;
+	padding: 10px 20px;
 
-	font-size:2em;
+	font-size: 2em;
 
-	font-weight:600;
+	font-weight: 600;
 
-	border:2px solid rgba(0,0,0,0.5);
+	border: 2px solid rgba(0, 0, 0, 0.5);
 
-	border-radius:40px;
+	border-radius: 40px;
 
-	box-shadow:5px 5px 10px rgba(0,0,0,0.5),
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
 
-	inset 5px 5px 20px rgba(255,255,255,0.2),
+		inset 5px 5px 20px rgba(255, 255, 255, 0.2),
 
-	inset -5px -5px 15px rgba(0,0,0,0.75);
+		inset -5px -5px 15px rgba(0, 0, 0, 0.75);
 
 }
 
-#time div{
+#time div {
 
-	position:relative;
+	position: relative;
 
-	width:60px;
+	width: 60px;
 
-	text-align:center;
+	text-align: center;
 
-	font-weight:500;
+	font-weight: 500;
 
-	color:var(--clr);
+	color: var(--clr);
 
 }
 
 #time div:nth-child(1)::after,
 
-#time div:nth-child(2)::after
+#time div:nth-child(2)::after {
 
-{
+	content: ':';
 
-	content:':';
+	position: absolute;
 
-	position:absolute;
-
-	right:-4px;
+	right: -4px;
 
 }
 
-#time div:last-child{
+#time div:last-child {
 
-	font-size:0.5em;
+	font-size: 0.5em;
 
-	display:flex;
+	display: flex;
 
-	justify-content:center;
+	justify-content: center;
 
-	align-items:center;
+	align-items: center;
 
-	color:#fff;
-
-}
-
-#time div:nth-child(2)::after;{
-
-	animation:animate 1s steps(1)infinite;
+	color: #fff;
 
 }
 
-@keyframes animate{
-
-	0%
+#time div:nth-child(2)::after;
 
 	{
 
-		opacity:1;
+	animation: animate 1s steps(1)infinite;
+
+}
+
+@keyframes animate {
+
+	0% {
+
+		opacity: 1;
 
 	}
 
-	50%{
+	50% {
 
-		opacity:0;
+		opacity: 0;
 
 	}
 
